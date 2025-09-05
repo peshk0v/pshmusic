@@ -1,6 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path');
 
+require('./tray.js');
+
 const currentDir = __dirname;
 
 function logggin(email, password) {
